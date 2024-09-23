@@ -32,7 +32,6 @@ export default function Navber() {
 }
 
 const BoxContainer = styled.div`
-  padding: 2%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   .box-logo {
