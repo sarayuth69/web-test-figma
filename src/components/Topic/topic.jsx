@@ -11,7 +11,7 @@ export default function Topic() {
         <IconVideo />
         เลือกเรียนตามหัวข้อที่สนใจ
       </div>
-      <div style={{ display: "flex", gap: "2%", justifyContent: "space-between" }}>
+      <div className="box-content-detal">
         {TopicData?.map((item) => {
           return (
             <BoxCard>
@@ -37,6 +37,11 @@ export default function Topic() {
 
 const BoxContent = styled.div`
   margin-top: 10%;
+  .box-content-detal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+  }
   .text-topic {
     font-size: 24px;
     font-weight: 700;
@@ -47,7 +52,6 @@ const BoxContent = styled.div`
 `;
 
 const BoxCard = styled.div`
-  width: auto;
   height: 223px;
   border-radius: 24px;
   background: #ffffff;
