@@ -4,6 +4,7 @@ import Title from "../../components/Title/title";
 import Topic from "../../components/Topic/topic";
 import Courses from "../../components/Courses/courses";
 import CoursesOnline from "../../components/CoursesOnline/coursesOnline";
+import Blog from "../../components/Blog/blog";
 
 export default function Index() {
   return (
@@ -13,6 +14,7 @@ export default function Index() {
       <Topic />
       <Courses />
       <CoursesOnline />
+      <Blog />
     </div>
   );
 }
